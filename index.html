@@ -20,15 +20,18 @@
     <nav>
         <div class="logo">Trevor Dracon</div>
         <div class="nav-links">
-            <a href="#apps">Apps</a>
-            <a href="#about">Sobre</a>
-            <a href="#privacy">Privacidade</a>
+            <a href="#apps" data-lang="nav_apps">Apps</a>
+            <a href="#about" data-lang="nav_about">Sobre</a>
+            <a href="#privacy" data-lang="nav_privacy">Privacidade</a>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+                <span class="lang-icon">🇺🇸</span> <span class="lang-text">EN</span>
+            </button>
         </div>
     </nav>
 
     <header>
-        <h1>Crafting Digital<br>Experiences</h1>
-        <p class="subtitle">Desenvolvimento mobile focado em performance, imersão e privacidade.</p>
+        <h1 data-lang="hero_title">Crafting Digital<br>Experiences</h1>
+        <p class="subtitle" data-lang="hero_subtitle">Desenvolvimento mobile focado em performance, imersão e privacidade.</p>
     </header>
 
     <div class="container" id="apps">
@@ -37,20 +40,20 @@
         <article class="card">
             <img src="swiftdeck_icon.png" alt="SwiftDeck" class="app-icon">
             <div class="card-content">
-                <span class="tag tag-util">Utilitário</span>
+                <span class="tag tag-util" data-lang="tag_util">Utilitário</span>
                 <h2>SwiftDeck</h2>
-                <p style="color: #94a3b8; margin: 1rem 0;">
+                <p style="color: #94a3b8; margin: 1rem 0;" data-lang="sd_desc">
                     O controle definitivo. Transforme seu smartphone Android em um trackpad e teclado wi-fi de baixa latência para Windows.
                 </p>
                 <ul style="list-style: none; color: #cbd5e1; font-size: 0.9rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li>⚡ Conexão Instantânea (UDP)</li>
-                    <li>🖱️ Gestos Multi-touch</li>
-                    <li>⌨️ Teclado Remoto</li>
+                    <li data-lang="sd_feat1">⚡ Conexão Instantânea (UDP)</li>
+                    <li data-lang="sd_feat2">🖱️ Gestos Multi-touch</li>
+                    <li data-lang="sd_feat3">⌨️ Teclado Remoto</li>
                 </ul>
-                <a href="https://drive.google.com/file/d/1LsneW6bOhAoBzIjmwPrd0OqFOmMAVhz-/view?usp=drive_link" class="btn">
+                <a href="https://drive.google.com/file/d/1LsneW6bOhAoBzIjmwPrd0OqFOmMAVhz-/view?usp=drive_link" class="btn" data-lang="btn_download_pc">
                     💻 Baixar Server (PC)
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.swiftdeck" class="btn btn-sub" target="_blank">
+                <a href="https://play.google.com/store/apps/details?id=com.swiftdeck" class="btn btn-sub" target="_blank" data-lang="btn_download_android">
                     📱 Baixar App (Android)
                 </a>
             </div>
@@ -60,48 +63,25 @@
         <article class="card">
             <img src="dungeons_legends_icon.jpg" alt="Dungeons Legends" class="app-icon">
             <div class="card-content">
-                <span class="tag tag-game">RPG Adventure</span>
+                <span class="tag tag-game" data-lang="tag_game">RPG Adventure</span>
                 <h2>Dungeons Legends</h2>
-                <p style="color: #94a3b8; margin: 1rem 0;">
+                <p style="color: #94a3b8; margin: 1rem 0;" data-lang="dl_desc">
                     Em breve. Explore masmorras perigosas, colete loot lendário e derrote chefes em batalhas épicas.
                 </p>
                 <div style="margin-bottom: 2rem;">
                      <!-- Space filler -->
                 </div>
-                <a href="https://play.google.com/apps/internaltest/4701669891630803151" class="btn" target="_blank">
+                <a href="https://play.google.com/apps/internaltest/4701669891630803151" class="btn" target="_blank" data-lang="btn_test">
                     🧪 Participar do Teste (Android)
                 </a>
             </div>
         </article>
     </div>
 
-    <section id="privacy" class="privacy-section">
-        <h3>Política de Privacidade</h3>
-        <div class="privacy-content">
-            <p>A <strong>Trevor Dracon Apks</strong> ("nós") respeita sua privacidade e transparência.</p>
-            
-            <p><strong>1. SwiftDeck (PC Remote):</strong></p>
-            <ul class="privacy-list">
-                <li>Não coleta, armazena ou transmite dados pessoais.</li>
-                <li>Funciona exclusivamente através da sua rede local (Wi-Fi).</li>
-                <li>Nenhum dado é enviado para a nuvem.</li>
-            </ul>
-
-            <p><strong>2. Dungeons Legends:</strong></p>
-            <ul class="privacy-list">
-                <li>Pode coletar dados anônimos de jogabilidade via Google Play Services apenas para analytics e backup de save na nuvem.</li>
-            </ul>
-
-            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">
-                Para dúvidas: contato.trevordracon@gmail.com
-            </p>
-        </div>
-    </section>
-
     <section id="about" class="about-section">
         <div class="about-content">
-            <h2>Quem é Trevor Dracon?</h2>
-            <p>
+            <h2 data-lang="about_title">Quem é Trevor Dracon?</h2>
+            <p data-lang="about_bio">
                 Sou <strong>Anderson Tadeu Alves</strong>, um desenvolvedor independente transformando código em experiências. 
                 Operando como um "One-Man Army", crio cada pixel e cada linha de código com paixão e propósito. 
                 Minha missão é provar que grandes ideias não precisam de grandes estúdios, apenas de dedicação e foco no usuário.
@@ -109,21 +89,44 @@
             <div class="stats-grid">
                 <div class="stat">
                     <span class="number">2+</span>
-                    <span class="label">Apps Lançados</span>
+                    <span class="label" data-lang="stat_apps">Apps Lançados</span>
                 </div>
                 <div class="stat">
                     <span class="number">100%</span>
-                    <span class="label">Foco no Usuário</span>
+                    <span class="label" data-lang="stat_user">Foco no Usuário</span>
                 </div>
                 <div class="stat">
                     <span class="number">BR</span>
-                    <span class="label">Desenvolvedor Indie</span>
+                    <span class="label" data-lang="stat_dev">Desenvolvedor Indie</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section id="privacy" class="privacy-section">
+        <h3 data-lang="privacy_title">Política de Privacidade</h3>
+        <div class="privacy-content">
+            <p data-lang="privacy_intro">A <strong>Trevor Dracon Apks</strong> ("nós") respeita sua privacidade e transparência.</p>
+            
+            <p><strong>1. SwiftDeck (PC Remote):</strong></p>
+            <ul class="privacy-list">
+                <li data-lang="privacy_sd_1">Não coleta, armazena ou transmite dados pessoais.</li>
+                <li data-lang="privacy_sd_2">Funciona exclusivamente através da sua rede local (Wi-Fi).</li>
+                <li data-lang="privacy_sd_3">Nenhum dado é enviado para a nuvem.</li>
+            </ul>
+
+            <p><strong>2. Dungeons Legends:</strong></p>
+            <ul class="privacy-list">
+                <li data-lang="privacy_dl_1">Pode coletar dados anônimos de jogabilidade via Google Play Services apenas para analytics e backup de save na nuvem.</li>
+            </ul>
+
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;" data-lang="privacy_contact">
+                Para dúvidas: contato.trevordracon@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <footer id="footer">
         <p>Designed & Developed by <strong>Trevor Dracon Apks</strong></p>
         <p style="margin-top: 0.5rem; opacity: 0.6;">© 2026 Anderson Alves. All Rights Reserved.</p>
     </footer>
