@@ -155,7 +155,6 @@ h1 {
     border: 1px solid var(--border);
     border-radius: 24px;
     padding: 2.5rem;
-    transition: transform 0.1s ease, box-shadow 0.3s ease; /* Faster transform for JS Tilt */
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(20px);
@@ -164,21 +163,34 @@ h1 {
     opacity: 0; /* JS FadeIn */
     transform: translateY(20px);
     animation: fadeInUp 1s forwards 0.3s; /* Delay */
+    height: 100%; /* Garante altura igual no Grid */
+}
+
+/* Garante que o conteúdo estique e empurre os botões para baixo */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card:hover {
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .card::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03), transparent);
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.03),
+        transparent
+    );
     transform: translateX(-100%);
     transition: 0.5s;
 }
@@ -192,7 +204,8 @@ h1 {
     height: 80px;
     border-radius: 18px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    align-self: flex-start; /* Mantém o ícone no topo */
 }
 
 .tag {
@@ -204,14 +217,22 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    align-self: flex-start;
 }
 
-.tag-util { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-.tag-game { background: rgba(234, 179, 8, 0.2); color: #facc15; }
+.tag-util {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+.tag-game {
+    background: rgba(234, 179, 8, 0.2);
+    color: #facc15;
+}
 
 .btn {
     display: block;
     width: 100%;
+    max-width: 280px; /* Limita a largura */
     padding: 1rem;
     text-align: center;
     background: var(--light);
@@ -219,8 +240,13 @@ h1 {
     text-decoration: none;
     font-weight: 700;
     border-radius: 12px;
-    margin-top: auto;
     transition: 0.3s;
+    margin: 0 auto; /* Remove margem vertical fixa */
+}
+
+/* O primeiro botão empurra tudo para baixo, nivelando os cards */
+.card-content > .btn:first-of-type {
+    margin-top: auto;
 }
 
 .btn:hover {
@@ -233,13 +259,80 @@ h1 {
     background: transparent;
     color: var(--light);
     border: 1px solid var(--border);
-    margin-top: 1rem;
+    margin-top: 1rem; /* Espaço entre botões */
     font-size: 0.9rem;
 }
 
 .btn-sub:hover {
     border-color: var(--light);
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Beta Box Styles */
+.beta-box {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center; /* Centraliza o texto interno */
+}
+
+.beta-info {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    border-left: 3px solid var(--secondary);
+    padding-left: 0.8rem;
+}
+
+.beta-form {
+    width: 100%;
+}
+
+.input-row {
+    display: flex;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: 0.3s;
+    max-width: 100%; /* Garante que respeita o container */
+}
+
+.input-row:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.beta-input {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    width: 100%;
+}
+
+.beta-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.beta-btn {
+    background: transparent;
+    color: var(--primary);
+    border: none;
+    padding: 0 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 1px solid var(--border);
 }
 
 /* Privacy Section */

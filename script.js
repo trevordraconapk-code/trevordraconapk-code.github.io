@@ -44,9 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
             sd_feat3: "⌨️ Teclado Remoto",
             btn_download_pc: "💻 Baixar Server (PC)",
             btn_download_android: "📱 Baixar App (Android)",
+            beta_info: "⚠️ <strong>Teste Fechado:</strong> Para usar o link acima, seu e-mail deve estar liberado. Cadastre-se abaixo (Acesso em ±4h).",
             tag_game: "RPG Adventure",
-            dl_desc: "Em breve. Explore masmorras perigosas, colete loot lendário e derrote chefes em batalhas épicas.",
-            btn_test: "🧪 Participar do Teste (Android)",
+            dl_desc: "Explore masmorras, domine pets e derrote chefes gigantes neste viciante RPG de Tap (Clicker).",
+            dl_feat1: "👆 Jogabilidade Tap Viciante",
+            dl_feat2: "🐾 Pets e Montarias",
+            dl_feat3: "🛡️ Classes e Itens Raros",
+            btn_test: "🧪 Baixar Beta (Android)",
             about_title: "Quem é Trevor Dracon?",
             about_bio: "Sou <strong>Anderson Tadeu Alves</strong>, um desenvolvedor independente transformando código em experiências. Operando como um \"One-Man Army\", crio cada pixel e cada linha de código com paixão e propósito. Minha missão é provar que grandes ideias não precisam de grandes estúdios, apenas de dedicação e foco no usuário.",
             stat_apps: "Apps Lançados",
@@ -58,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             privacy_sd_2: "Funciona exclusivamente através da sua rede local (Wi-Fi).",
             privacy_sd_3: "Nenhum dado é enviado para a nuvem.",
             privacy_dl_1: "Pode coletar dados anônimos de jogabilidade via Google Play Services apenas para analytics e backup de save na nuvem.",
-            privacy_contact: "Para dúvidas: contato.trevordracon@gmail.com"
+            privacy_contact: "Para dúvidas: trevordraconapk@gmail.com"
         },
         en: {
             nav_apps: "Apps",
@@ -73,9 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
             sd_feat3: "⌨️ Remote Keyboard",
             btn_download_pc: "💻 Download Server (PC)",
             btn_download_android: "📱 Download App (Android)",
+            beta_info: "⚠️ <strong>Closed Test:</strong> To use the link above, your email must be authorized. Sign up below (Access in ~4h).",
             tag_game: "RPG Adventure",
-            dl_desc: "Coming soon. Explore dangerous dungeons, collect legendary loot, and defeat bosses in epic battles.",
-            btn_test: "🧪 Join Test (Android)",
+            dl_desc: "Explore dungeons, tame pets, and defeat giant bosses in this addictive Tap RPG (Clicker).",
+            dl_feat1: "👆 Addictive Tap Gameplay",
+            dl_feat2: "🐾 Pets & Mounts",
+            dl_feat3: "🛡️ Classes & Rare Loot",
+            btn_test: "🧪 Download Beta (Android)",
             about_title: "Who is Trevor Dracon?",
             about_bio: "I am <strong>Anderson Tadeu Alves</strong>, an independent developer turning code into experiences. Operating as a \"One-Man Army,\" I craft every pixel and line of code with passion and purpose. My mission is to prove that big ideas don't need big studios, just dedication and user focus.",
             stat_apps: "Apps Released",
@@ -87,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             privacy_sd_2: "Works exclusively via your local network (Wi-Fi).",
             privacy_sd_3: "No data is sent to the cloud.",
             privacy_dl_1: "May collect anonymous gameplay data via Google Play Services solely for analytics and cloud save backups.",
-            privacy_contact: "Questions? contato.trevordracon@gmail.com"
+            privacy_contact: "Questions? trevordraconapk@gmail.com"
         }
     };
 
