@@ -71,7 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       privacy_dl_1:
         "Pode coletar dados anônimos de jogabilidade via Google Play Services apenas para analytics e backup de save na nuvem.",
       privacy_contact: "Para dúvidas: trevordraconapk@gmail.com",
-      
+      priv_header_subtitle: "Transparência total sobre seus dados.",
+      priv_contact_msg: "Dúvidas? Entre em contato:",
+      footer_cred: "Designed & Developed by <strong>Trevor Dracon Apks</strong>",
+      footer_rights: "© 2026 Anderson Alves. All Rights Reserved.",
+
       // Privacy Page Keys (PT)
       priv_mm_title: "MiniMentes: Aprenda Brincando",
       priv_mm_desc: "Desenvolvido para crianças e famílias. Nosso compromisso é com a segurança digital dos pequenos.",
@@ -130,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       privacy_dl_1:
         "May collect anonymous gameplay data via Google Play Services solely for analytics and cloud save backups.",
       privacy_contact: "Questions? trevordraconapk@gmail.com",
+      priv_header_subtitle: "Total transparency about your data.",
       
       // Privacy Page Keys (EN)
       priv_mm_title: "MiniMentes: Learn by Playing",
@@ -158,6 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
       mm_feat2: "🗣️ PT / EN / ES Voiceover",
       mm_feat3: "🎨 Kid-Safe & Ad-Free",
       btn_download_apk: "📥 Download APK (v1.0)",
+      
+      priv_contact_msg: "Questions? Get in touch:",
+      footer_cred: "Designed & Developed by <strong>Trevor Dracon Apks</strong>",
+      footer_rights: "© 2026 Anderson Alves. All Rights Reserved.",
     },
   };
 

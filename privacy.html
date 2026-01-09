@@ -19,17 +19,20 @@
     <div class="bg-animation"></div>
 
     <nav>
-        <div class="logo">Toque na Tela</div>
+        <div class="logo">Trevor Dracon</div>
         <div class="nav-links">
-            <a href="index.html#apps">Apps</a>
-            <a href="index.html#about">Sobre</a>
-            <a href="privacy.html" class="active">Privacidade</a>
+            <a href="index.html#apps" data-lang="nav_apps">Apps</a>
+            <a href="index.html#about" data-lang="nav_about">Sobre</a>
+            <a href="privacy.html" class="active" data-lang="nav_privacy">Privacidade</a>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+                <span class="lang-icon">🇺🇸</span> <span class="lang-text">EN</span>
+            </button>
         </div>
     </nav>
 
     <header style="padding: 10vh 5%; min-height: 40vh;">
-        <h1>Política de Privacidade</h1>
-        <p class="subtitle">Transparência total sobre seus dados.</p>
+        <h1 data-lang="privacy_title">Política de Privacidade</h1>
+        <p class="subtitle" data-lang="priv_header_subtitle">Transparência total sobre seus dados.</p>
     </header>
 
     <div class="container">
@@ -87,7 +90,7 @@
         </article>
 
         <section style="text-align: center; margin-top: 4rem; color: #94a3b8;">
-            <p>Dúvidas? Entre em contato:</p>
+            <p data-lang="priv_contact_msg">Dúvidas? Entre em contato:</p>
             <a href="mailto:trevordraconapk@gmail.com" class="btn" style="display: inline-block; margin-top: 1rem;">
                 ✉️ trevordraconapk@gmail.com
             </a>
@@ -96,9 +99,12 @@
     </div>
 
     <footer id="footer">
-        <p>Designed & Developed by <strong>Trevor Dracon Apks</strong></p>
-        <p style="margin-top: 0.5rem; opacity: 0.6;">© 2026 Anderson Alves. All Rights Reserved.</p>
+        <p data-lang="footer_cred">Designed & Developed by <strong>Trevor Dracon Apks</strong></p>
+        <p style="margin-top: 0.5rem; opacity: 0.6;" data-lang="footer_rights">© 2026 Anderson Alves. All Rights Reserved.</p>
     </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
 
 </body>
 </html>
