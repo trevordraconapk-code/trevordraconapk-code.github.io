@@ -71,6 +71,25 @@ document.addEventListener("DOMContentLoaded", () => {
       privacy_dl_1:
         "Pode coletar dados anônimos de jogabilidade via Google Play Services apenas para analytics e backup de save na nuvem.",
       privacy_contact: "Para dúvidas: trevordraconapk@gmail.com",
+      
+      // Privacy Page Keys (PT)
+      priv_mm_title: "MiniMentes: Aprenda Brincando",
+      priv_mm_desc: "Desenvolvido para crianças e famílias. Nosso compromisso é com a segurança digital dos pequenos.",
+      priv_subtitle_collect: "Coleta de Dados",
+      priv_mm_collect_1: "<strong>Não coletamos dados pessoais:</strong> O app não pede nome, e-mail, telefone ou localização.",
+      priv_mm_collect_2: "<strong>Sem rastreamento:</strong> Não utilizamos rastreadores de publicidade comportamental.",
+      priv_mm_collect_3: "<strong>Anúncios Seguros:</strong> Exibimos apenas banners classificados como 'Família' via Google AdMob, sem personalização baseada em dados do usuário.",
+      priv_subtitle_perm: "Permissões",
+      priv_mm_perm_desc: "O aplicativo pode solicitar acesso à rede apenas para carregar anúncios genéricos e verificar atualizações. Nenhuma outra permissão (câmera, microfone, arquivos) é necessária.",
+      
+      priv_subtitle_data: "Dados e Conexão",
+      priv_sd_1: "<strong>Funcionamento Local:</strong> O app opera exclusivamente via Wi-Fi Local (UDP).",
+      priv_sd_2: "<strong>Zero Nuvem:</strong> Nenhum dado do seu teclado ou mouse é enviado para servidores externos.",
+      priv_sd_3: "<strong>Sem Coleta:</strong> Não armazenamos logs do que você digita. O app age apenas como um 'controle remoto' direto.",
+      
+      priv_subtitle_services: "Serviços de Terceiros",
+      priv_dl_1: "<strong>Google Play Games:</strong> Utilizamos os serviços do Google para salvar o progresso na nuvem (Cloud Save) e Rankings.",
+      priv_dl_2: "<strong>Dados Coletados:</strong> Apenas dados anônimos de jogabilidade (Analytics) para balanceamento do jogo e correção de bugs.",
     },
     en: {
       nav_apps: "Apps",
@@ -111,6 +130,25 @@ document.addEventListener("DOMContentLoaded", () => {
       privacy_dl_1:
         "May collect anonymous gameplay data via Google Play Services solely for analytics and cloud save backups.",
       privacy_contact: "Questions? trevordraconapk@gmail.com",
+      
+      // Privacy Page Keys (EN)
+      priv_mm_title: "MiniMentes: Learn by Playing",
+      priv_mm_desc: "Designed for kids and families. We are committed to digital safety for little ones.",
+      priv_subtitle_collect: "Data Collection",
+      priv_mm_collect_1: "<strong>No Personal Data:</strong> The app does not ask for name, email, phone, or location.",
+      priv_mm_collect_2: "<strong>No Tracking:</strong> We do not use behavioral advertising trackers.",
+      priv_mm_collect_3: "<strong>Safe Ads:</strong> We only display 'Family' rated banners via Google AdMob, without user-based personalization.",
+      priv_subtitle_perm: "Permissions",
+      priv_mm_perm_desc: "The app may request network access only to load generic ads and check for updates. No other permission (camera, mic, files) is required.",
+      
+      priv_subtitle_data: "Data & Connection",
+      priv_sd_1: "<strong>Local Operation:</strong> The app operates exclusively via Local Wi-Fi (UDP).",
+      priv_sd_2: "<strong>Zero Cloud:</strong> No keyboard or mouse data is sent to external servers.",
+      priv_sd_3: "<strong>No Logs:</strong> We do not store logs of what you type. The app acts solely as a direct 'remote control'.",
+      
+      priv_subtitle_services: "Third-Party Services",
+      priv_dl_1: "<strong>Google Play Games:</strong> We use Google services for Cloud Save and Leaderboards.",
+      priv_dl_2: "<strong>Collected Data:</strong> Only anonymous gameplay data (Analytics) for game balancing and bug fixing.",
 
       // MiniMentes
       tag_edu: "Educational",
