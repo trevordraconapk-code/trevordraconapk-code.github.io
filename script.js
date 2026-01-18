@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
       sd_feat1: "⚡ Conexão Instantânea (UDP)",
       sd_feat2: "🖱️ Gestos Multi-touch",
       sd_feat3: "⌨️ Teclado Remoto",
+      sd_feat4: "📱 <strong>Novo:</strong> Servidor Android (TV/Tablet)",
+      sd_feat5: "🔍 <strong>Novo:</strong> Descoberta Automática",
       btn_download_pc: "💻 Baixar Server (PC)",
+      btn_download_server_apk: "📺 Baixar Server (Android)",
       btn_download_android: "📱 Baixar App (Android)",
       beta_info:
         "⚠️ <strong>Teste Fechado:</strong> Para usar o link acima, seu e-mail deve estar liberado. Cadastre-se abaixo (Acesso em ±4h).",
@@ -128,7 +131,10 @@ document.addEventListener("DOMContentLoaded", () => {
       sd_feat1: "⚡ Instant Connection (UDP)",
       sd_feat2: "🖱️ Multi-touch Gestures",
       sd_feat3: "⌨️ Remote Keyboard",
+      sd_feat4: "📱 <strong>New:</strong> Android Server (TV/Tablet)",
+      sd_feat5: "🔍 <strong>New:</strong> Auto Discovery",
       btn_download_pc: "💻 Download Server (PC)",
+      btn_download_server_apk: "📺 Download Server (Android)",
       btn_download_android: "📱 Download App (Android)",
       beta_info:
         "⚠️ <strong>Closed Test:</strong> To use the link above, your email must be authorized. Sign up below (Access in ~4h).",
