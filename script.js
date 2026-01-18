@@ -201,7 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  let currentLang = "pt";
+  // Load saved language preference from localStorage, default to "pt"
+  let currentLang = localStorage.getItem("preferredLang") || "pt";
   const langToggle = document.getElementById("lang-toggle");
   const langText = langToggle.querySelector(".lang-text");
   const langIcon = langToggle.querySelector(".lang-icon");
@@ -222,12 +223,18 @@ document.addEventListener("DOMContentLoaded", () => {
       langText.textContent = "EN";
       langIcon.textContent = "🇺🇸";
     }
+    
+    // Save preference to localStorage
+    localStorage.setItem("preferredLang", lang);
   }
 
   langToggle.addEventListener("click", () => {
     currentLang = currentLang === "pt" ? "en" : "pt";
     updateLanguage(currentLang);
   });
+  
+  // Apply saved language on page load
+  updateLanguage(currentLang);
 
   console.log("Trevor Dracon Website Loaded 🚀");
 });
