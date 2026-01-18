@@ -1,188 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trevor Dracon Apks | Inovação Mobile</title>
-    <link rel="icon" type="image/png" href="swiftdeck_icon.png">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="swiftdeck_icon.png" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="bg-animation"></div>
 
     <nav>
-        <div class="logo">Trevor Dracon</div>
-        <div class="nav-links">
-            <a href="index.html#apps" data-lang="nav_apps">Apps</a>
-            <a href="index.html#about" data-lang="nav_about">Sobre</a>
-            <a href="privacy.html" data-lang="nav_privacy">Privacidade</a>
-            <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
-                <span class="lang-icon">🇺🇸</span> <span class="lang-text">EN</span>
-            </button>
-        </div>
+      <div class="logo">Trevor Dracon</div>
+      <div class="nav-links">
+        <a href="index.html#apps" data-lang="nav_apps">Apps</a>
+        <a href="index.html#about" data-lang="nav_about">Sobre</a>
+        <a href="privacy.html" data-lang="nav_privacy">Privacidade</a>
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+          <span class="lang-icon">🇺🇸</span> <span class="lang-text">EN</span>
+        </button>
+      </div>
     </nav>
 
-
     <header>
-        <h1 data-lang="hero_title">Crafting Digital<br>Experiences</h1>
-        <p class="subtitle" data-lang="hero_subtitle">Desenvolvimento mobile focado em performance, imersão e privacidade.</p>
+      <h1 data-lang="hero_title">Crafting Digital<br />Experiences</h1>
+      <p class="subtitle" data-lang="hero_subtitle">
+        Desenvolvimento mobile focado em performance, imersão e privacidade.
+      </p>
     </header>
 
     <div class="container" id="apps">
-        
-        <!-- MiniMentes Card -->
-        <article class="card">
-            <img src="minimentes_icon.png" alt="MiniMentes" class="app-icon">
-            <div class="card-content">
-                <span class="tag tag-game" style="background:var(--secondary); color:#000;" data-lang="tag_edu">Educativo</span>
-                <h2>MiniMentes</h2>
-                <p style="color: #94a3b8; margin: 1rem 0;" data-lang="mm_desc">
-                    Aprenda formas, cores e letras brincando! Quebra-cabeças 3D com narração em Português, Inglês e Espanhol.
-                </p>
-                <ul style="list-style: none; color: #cbd5e1; font-size: 0.9rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li data-lang="mm_feat1">🧩 Quebra-cabeças 3D</li>
-                    <li data-lang="mm_feat2">🗣️ Narração PT / EN / ES</li>
-                    <li data-lang="mm_feat3">🎨 Seguro para Crianças</li>
-                </ul>
-                <a href="MiniMentes.apk" class="btn btn-sub" download data-lang="btn_download_apk">
-                    🧪 Baixar Beta (APK)
-                </a>
+      <!-- MiniMentes Card -->
+      <article class="card">
+        <img src="minimentes_icon.png" alt="MiniMentes" class="app-icon" />
+        <div class="card-content">
+          <span
+            class="tag tag-game"
+            style="background: var(--secondary); color: #000"
+            data-lang="tag_edu"
+            >Educativo</span
+          >
+          <h2>MiniMentes</h2>
+          <p style="color: #94a3b8; margin: 1rem 0" data-lang="mm_desc">
+            Aprenda formas, cores e letras brincando! Quebra-cabeças 3D com
+            narração em Português, Inglês e Espanhol.
+          </p>
+          <ul
+            style="
+              list-style: none;
+              color: #cbd5e1;
+              font-size: 0.9rem;
+              margin-bottom: 2rem;
+              line-height: 1.8;
+            "
+          >
+            <li data-lang="mm_feat1">🧩 Quebra-cabeças 3D</li>
+            <li data-lang="mm_feat2">🗣️ Narração PT / EN / ES</li>
+            <li data-lang="mm_feat3">🎨 Seguro para Crianças</li>
+          </ul>
+          <a
+            href="https://play.google.com/apps/testing/com.minimentes.app"
+            class="btn btn-sub"
+            target="_blank"
+            data-lang="btn_test"
+          >
+            🧪 Baixar Beta (Android)
+          </a>
 
-                <!-- Beta Box -->
-                <div class="beta-box">
-                    <p class="beta-info" data-lang="beta_info">⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado. Cadastre-se abaixo (Acesso em ±4h).</p>
-                    <form action="https://formspree.io/f/xqeavzqv" method="POST" class="beta-form">
-                        <input type="hidden" name="_subject" value="Novo Tester: MiniMentes">
-                        
-                        <div class="input-row">
-                            <input type="email" name="email" placeholder="Seu Gmail aqui..." required class="beta-input">
-                            <button type="submit" class="beta-btn" title="Enviar">
-                                ➤
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </article>
+          <!-- Beta Box -->
+          <div class="beta-box">
+            <p class="beta-info" data-lang="beta_info">
+              ⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado.
+              Cadastre-se abaixo (Acesso em ±4h).
+            </p>
+            <form
+              action="https://formspree.io/f/xqeavzqv"
+              method="POST"
+              class="beta-form"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Novo Tester: MiniMentes"
+              />
 
-        <!-- SwiftDeck Card -->
-        <article class="card">
-            <img src="swiftdeck_icon.png" alt="SwiftDeck" class="app-icon">
-            <div class="card-content">
-                <span class="tag tag-util" data-lang="tag_util">Utilitário</span>
-                <h2>SwiftDeck</h2>
-                <p style="color: #94a3b8; margin: 1rem 0;" data-lang="sd_desc">
-                    O controle definitivo. Transforme seu smartphone Android em um trackpad e teclado wi-fi de baixa latência para Windows.
-                </p>
-                <ul style="list-style: none; color: #cbd5e1; font-size: 0.9rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li data-lang="sd_feat1">⚡ Conexão Instantânea (UDP)</li>
-                    <li data-lang="sd_feat2">🖱️ Gestos Multi-touch</li>
-                    <li data-lang="sd_feat3">⌨️ Teclado Remoto</li>
-                </ul>
-                <a href="https://drive.google.com/file/d/1LsneW6bOhAoBzIjmwPrd0OqFOmMAVhz-/view?usp=drive_link" class="btn" data-lang="btn_download_pc">
-                    💻 Baixar Server (PC)
-                </a>
-                <a href="https://play.google.com/apps/internaltest/4701635808404881327" class="btn btn-sub" target="_blank" data-lang="btn_test">
-                    🧪 Baixar Beta (Android)
-                </a>
+              <div class="input-row">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu Gmail aqui..."
+                  required
+                  class="beta-input"
+                />
+                <button type="submit" class="beta-btn" title="Enviar">➤</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
 
-                <!-- Beta Box -->
-                <div class="beta-box">
-                    <p class="beta-info" data-lang="beta_info">⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado. Cadastre-se abaixo (Acesso em ±4h).</p>
-                    <form action="https://formspree.io/f/xqeavzqv" method="POST" class="beta-form">
-                        <input type="hidden" name="_subject" value="Novo Tester: SwiftDeck">
-                        
-                        <div class="input-row">
-                            <input type="email" name="email" placeholder="Seu Gmail aqui..." required class="beta-input">
-                            <button type="submit" class="beta-btn" title="Enviar">
-                                ➤
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </article>
+      <!-- SwiftDeck Card -->
+      <article class="card">
+        <img src="swiftdeck_icon.png" alt="SwiftDeck" class="app-icon" />
+        <div class="card-content">
+          <span class="tag tag-util" data-lang="tag_util">Utilitário</span>
+          <h2>SwiftDeck</h2>
+          <p style="color: #94a3b8; margin: 1rem 0" data-lang="sd_desc">
+            O controle definitivo. Transforme seu smartphone Android em um
+            trackpad e teclado wi-fi de baixa latência para Windows.
+          </p>
+          <ul
+            style="
+              list-style: none;
+              color: #cbd5e1;
+              font-size: 0.9rem;
+              margin-bottom: 2rem;
+              line-height: 1.8;
+            "
+          >
+            <li data-lang="sd_feat1">⚡ Conexão Instantânea (UDP)</li>
+            <li data-lang="sd_feat2">🖱️ Gestos Multi-touch</li>
+            <li data-lang="sd_feat3">⌨️ Teclado Remoto</li>
+          </ul>
+          <a
+            href="https://drive.google.com/file/d/1LsneW6bOhAoBzIjmwPrd0OqFOmMAVhz-/view?usp=drive_link"
+            class="btn"
+            data-lang="btn_download_pc"
+          >
+            💻 Baixar Server (PC)
+          </a>
+          <a
+            href="https://play.google.com/apps/internaltest/4701635808404881327"
+            class="btn btn-sub"
+            target="_blank"
+            data-lang="btn_test"
+          >
+            🧪 Baixar Beta (Android)
+          </a>
 
-        <!-- Dungeons Legends Card -->
-        <article class="card">
-            <img src="dungeons_legends_icon.jpg" alt="Dungeons Legends" class="app-icon">
-            <div class="card-content">
-                <span class="tag tag-game" data-lang="tag_game">RPG Adventure</span>
-                <h2>Dungeons Legends</h2>
-                <p style="color: #94a3b8; margin: 1rem 0;" data-lang="dl_desc">
-                    Explore masmorras, domine pets e derrote chefes gigantes neste viciante RPG de Tap (Clicker).
-                </p>
-                
-                <ul style="list-style: none; color: #cbd5e1; font-size: 0.9rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li data-lang="dl_feat1">👆 Jogabilidade Tap Viciante</li>
-                    <li data-lang="dl_feat2">🐾 Pets e Montarias</li>
-                    <li data-lang="dl_feat3">🛡️ Classes e Itens Raros</li>
-                </ul>
+          <!-- Beta Box -->
+          <div class="beta-box">
+            <p class="beta-info" data-lang="beta_info">
+              ⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado.
+              Cadastre-se abaixo (Acesso em ±4h).
+            </p>
+            <form
+              action="https://formspree.io/f/xqeavzqv"
+              method="POST"
+              class="beta-form"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Novo Tester: SwiftDeck"
+              />
 
-                <a href="https://play.google.com/apps/internaltest/4701669891630803151" class="btn" target="_blank" data-lang="btn_test">
-                    🧪 Baixar Beta (Android)
-                </a>
+              <div class="input-row">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu Gmail aqui..."
+                  required
+                  class="beta-input"
+                />
+                <button type="submit" class="beta-btn" title="Enviar">➤</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
 
-                <!-- Beta Box -->
-                <div class="beta-box">
-                    <p class="beta-info" data-lang="beta_info">⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado. Cadastre-se abaixo (Acesso em ±4h).</p>
-                    <form action="https://formspree.io/f/xqeavzqv" method="POST" class="beta-form">
-                        <input type="hidden" name="_subject" value="Novo Tester: Dungeons Legends">
-                        
-                        <div class="input-row">
-                            <input type="email" name="email" placeholder="Seu Gmail aqui..." required class="beta-input">
-                            <button type="submit" class="beta-btn" title="Enviar">
-                                ➤
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </article>
+      <!-- Dungeons Legends Card -->
+      <article class="card">
+        <img
+          src="dungeons_legends_icon.jpg"
+          alt="Dungeons Legends"
+          class="app-icon"
+        />
+        <div class="card-content">
+          <span class="tag tag-game" data-lang="tag_game">RPG Adventure</span>
+          <h2>Dungeons Legends</h2>
+          <p style="color: #94a3b8; margin: 1rem 0" data-lang="dl_desc">
+            Explore masmorras, domine pets e derrote chefes gigantes neste
+            viciante RPG de Tap (Clicker).
+          </p>
+
+          <ul
+            style="
+              list-style: none;
+              color: #cbd5e1;
+              font-size: 0.9rem;
+              margin-bottom: 2rem;
+              line-height: 1.8;
+            "
+          >
+            <li data-lang="dl_feat1">👆 Jogabilidade Tap Viciante</li>
+            <li data-lang="dl_feat2">🐾 Pets e Montarias</li>
+            <li data-lang="dl_feat3">🛡️ Classes e Itens Raros</li>
+          </ul>
+
+          <a
+            href="https://play.google.com/apps/internaltest/4701669891630803151"
+            class="btn"
+            target="_blank"
+            data-lang="btn_test"
+          >
+            🧪 Baixar Beta (Android)
+          </a>
+
+          <!-- Beta Box -->
+          <div class="beta-box">
+            <p class="beta-info" data-lang="beta_info">
+              ⚠️ Teste Fechado: Para baixar, seu e-mail precisa estar liberado.
+              Cadastre-se abaixo (Acesso em ±4h).
+            </p>
+            <form
+              action="https://formspree.io/f/xqeavzqv"
+              method="POST"
+              class="beta-form"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Novo Tester: Dungeons Legends"
+              />
+
+              <div class="input-row">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu Gmail aqui..."
+                  required
+                  class="beta-input"
+                />
+                <button type="submit" class="beta-btn" title="Enviar">➤</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
     </div>
 
     <section id="about" class="about-section">
-        <div class="about-content">
-            <h2 data-lang="about_title">Quem é Trevor Dracon?</h2>
-            <p data-lang="about_bio">
-                Sou <strong>Anderson Tadeu Alves</strong>, um desenvolvedor independente transformando código em experiências. 
-                Operando como um "One-Man Army", crio cada pixel e cada linha de código com paixão e propósito. 
-                Minha missão é provar que grandes ideias não precisam de grandes estúdios, apenas de dedicação e foco no usuário.
-            </p>
-            <div class="stats-grid">
-                <div class="stat">
-                    <span class="number">3+</span>
-                    <span class="label" data-lang="stat_apps">Apps Lançados</span>
-                </div>
-                <div class="stat">
-                    <span class="number">100%</span>
-                    <span class="label" data-lang="stat_user">Foco no Usuário</span>
-                </div>
-                <div class="stat">
-                    <span class="number">BR</span>
-                    <span class="label" data-lang="stat_dev">Desenvolvedor Indie</span>
-                </div>
-            </div>
+      <div class="about-content">
+        <h2 data-lang="about_title">Quem é Trevor Dracon?</h2>
+        <p data-lang="about_bio">
+          Sou <strong>Anderson Tadeu Alves</strong>, um desenvolvedor
+          independente transformando código em experiências. Operando como um
+          "One-Man Army", crio cada pixel e cada linha de código com paixão e
+          propósito. Minha missão é provar que grandes ideias não precisam de
+          grandes estúdios, apenas de dedicação e foco no usuário.
+        </p>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="number">3+</span>
+            <span class="label" data-lang="stat_apps">Apps Lançados</span>
+          </div>
+          <div class="stat">
+            <span class="number">100%</span>
+            <span class="label" data-lang="stat_user">Foco no Usuário</span>
+          </div>
+          <div class="stat">
+            <span class="number">BR</span>
+            <span class="label" data-lang="stat_dev">Desenvolvedor Indie</span>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
     <footer id="footer">
-        <p data-lang="footer_cred">Designed & Developed by <strong>Trevor Dracon Apks</strong></p>
-        <p style="margin-top: 0.5rem; opacity: 0.6;" data-lang="footer_rights">© 2026 Anderson Alves. All Rights Reserved.</p>
+      <p data-lang="footer_cred">
+        Designed & Developed by <strong>Trevor Dracon Apks</strong>
+      </p>
+      <p style="margin-top: 0.5rem; opacity: 0.6" data-lang="footer_rights">
+        © 2026 Anderson Alves. All Rights Reserved.
+      </p>
     </footer>
 
     <!-- External JS -->
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
